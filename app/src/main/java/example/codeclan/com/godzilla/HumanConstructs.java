@@ -9,4 +9,6 @@ public abstract class HumanConstructs {
         this.type = type;
         this.healthValue = healthValue;
     }
+
+// comment
 }
