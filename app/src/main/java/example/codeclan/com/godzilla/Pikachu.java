@@ -11,9 +11,9 @@ public class Pikachu extends Kaiju implements Attack {
         super(name, healthValue, destructiveForce);
     }
 
-//    public String attack(){
-//        return "Kablammo!!";
-//    }
+    public String attack(){
+        return "Kablammo!!";
+    }
 
     public String roar(){
         return "PIKA! PIKA!";

@@ -11,9 +11,9 @@ public class Godzilla extends Kaiju implements Attack {
             super(name, healthValue, destructiveForce);
         }
 
-//        public String attack(){
-//            return "Me Angry!";
-//         }
+//        public void attack(String victim){
+//            (destructiveForce -= victim.healthValue)
+//        }
 
         public String roar(){
             return "ROAR!";
