@@ -5,29 +5,27 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
-
 public class SkyScraperTest {
-    Skyscraper skyscraper;
+    SkyScraper skyscraper;
 
 
     @Before
     public void before(){
-        skyscraper = new Skyscraper("building", 30);
+        skyscraper = new SkyScraper("Nakatomi Plaza", 50);
     }
-
 
     @Test
     public void hasType(){
-        assertEquals("building", skyscraper.getType());
+        assertEquals("Nakatomi Plaza", skyscraper.getType());
     }
 
     @Test
     public void hasHealthValue(){
-        assertEquals(30, skyscraper.getHealthValue());
+        assertEquals(50, skyscraper.getHealthValue());
     }
 
     @Test
     public void canBeDestroyed(){
-        assertEquals("Kabooooooooom", skyscraper.destroy());
+        assertEquals("CRRRAAASSSHH!", skyscraper.die());
     }
 }

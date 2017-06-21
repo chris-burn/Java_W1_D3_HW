@@ -9,26 +9,26 @@ public class GodzillaTest {
 
     @Before
     public void before(){
-        godzilla = new Godzilla("Gary", 100, 50);
+        godzilla = new Godzilla("Chris", 100, 50);
     }
 
     @Test
     public void hasName(){
-        assertEquals("Gary", godzilla.getName());
+        assertEquals("Chris", godzilla.getName());
     }
 
     @Test
     public void canRoar(){
-        assertEquals(godzilla.roar(), "Roooooaooooaaaaaaaaar!!!");
+        assertEquals("ROAR!", godzilla.roar());
     }
 
     @Test
     public void canGetHealthValue(){
-        assertEquals(godzilla.getHealthValue(), 100);
+        assertEquals(100, godzilla.getHealthValue());
     }
 
     @Test
     public void canGetDestructiveForce(){
-        assertEquals(godzilla.getDestructiveForce(), 50);
+        assertEquals(50, godzilla.getDestructiveForce());
     }
 }

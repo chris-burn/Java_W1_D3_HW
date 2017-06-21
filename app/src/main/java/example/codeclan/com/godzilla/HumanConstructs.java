@@ -10,5 +10,11 @@ public abstract class HumanConstructs {
         this.healthValue = healthValue;
     }
 
-// comment
+    public String getType() {
+        return type;
+    }
+
+    public int getHealthValue() {
+        return healthValue;
+    }
 }
